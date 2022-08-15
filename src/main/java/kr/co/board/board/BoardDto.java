@@ -10,9 +10,23 @@ public class BoardDto {
 	private String contents;
 	private String writer;
 	private Date writeDate = Calendar.getInstance().getTime();
-	private Integer viewCount = 1;
+	private Integer viewCount = 0;
 	
 	public BoardDto() {}
+
+	public BoardDto(Integer boardNum, String title, String contents) {
+		super();
+		this.boardNum = boardNum;
+		this.title = title;
+		this.contents = contents;
+	}
+
+	public BoardDto(String title, String contents, String writer) {
+		super();
+		this.title = title;
+		this.contents = contents;
+		this.writer = writer;
+	}
 
 	public BoardDto(Integer boardNum, String title, String contents, String writer, Date writeDate, Integer viewCount) {
 		super();
