@@ -20,7 +20,7 @@ public class TestMain {
 				System.out.println(boardMembersDto);
 			}
 			
-			ArrayList<BoardDto> ar2 = boardDao.getList();
+			ArrayList<BoardDto> ar2 = boardDao.getList(0);
 			
 			for(BoardDto boardDto : ar2) {
 				System.out.println(boardDto);
